@@ -5,7 +5,7 @@ def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-  names.push("齊藤")
+  names << ("齊藤")
   p names
 
 end
@@ -33,7 +33,7 @@ def q4
 
   # 以下に回答を記載
   # sports = sports.delete_if {|name| name == nil}
-  sports = sports.compact
+  sports.compact!
 
   # 以下は変更しないで下さい
   p sports
@@ -46,7 +46,7 @@ def q5
   # 以下に回答を記載
   p array1.empty?
   p array2.empty?
-  
+
 end
 
 def q6
