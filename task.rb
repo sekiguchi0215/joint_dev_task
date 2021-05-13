@@ -5,7 +5,7 @@ def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-  names << ("齊藤")
+  names << "齊藤"
   p names
 
 end
