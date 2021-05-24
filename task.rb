@@ -7,7 +7,6 @@ def q1
   # 以下に回答を記載
   names << "齊藤"
   p names
-
 end
 
 def q2
@@ -17,7 +16,6 @@ def q2
   # 以下に回答を記載
   array1 = array1 + array2
   p array1
-
 end
 
 def q3
@@ -25,7 +23,6 @@ def q3
 
   # 以下に回答を記載
   p numbers.count(3)
-
 end
 
 def q4
@@ -46,7 +43,6 @@ def q5
   # 以下に回答を記載
   p array1.empty?
   p array2.empty?
-
 end
 
 def q6
@@ -61,7 +57,6 @@ def q6
   end
 
   p numbers2
-
 end
 
 def q7
@@ -92,7 +87,6 @@ def q9
   names.each.with_index(1) do |name, i|
     puts "会員No.#{i} #{name}さん"
   end
-
 end
 
 def q10
@@ -106,7 +100,6 @@ def q10
       puts "まぁまぁ好きです。"
     end
   end
-
 end
 
 def q11
@@ -118,7 +111,6 @@ def q11
   sports.each.with_index(1) do |name, i|
     puts "No.#{i} #{name}"
   end
-  
 end
 
 def q12
@@ -126,7 +118,6 @@ def q12
 
   # 以下に回答を記載
   puts data[:user][:name]
-
 end
 
 def q13
@@ -146,7 +137,6 @@ def q14
   keys = data.keys
 
   p keys
-
 end
 
 def q15
@@ -156,7 +146,6 @@ def q15
   # 以下に回答を記載
   puts data1.has_key?(:age) ? "OK" : "NG"
   puts data2.has_key?(:age) ? "OK" : "NG"
-
 end
 
 def q16
@@ -164,20 +153,28 @@ def q16
     { name: "satou", age: 22 },
     { name: "yamada", age: 12 },
     { name: "takahashi", age: 32 },
-    { name: "nakamura", age: 41 }
+    { name: "nakamura", age: 41 },
   ]
 
   # 以下に回答を記載
   users.each do |user|
     puts "私の名前は#{user[:name]}です。年齢は#{user[:age]}歳です。"
   end
-  
-
 end
 
 class UserQ17
   # 以下に回答を記載
+  def initialize(name:, age:, gender:)
+    @name = name
+    @age = age
+    @gender = gender
+  end
 
+  def info
+    puts "名前:#{@name}"
+    puts "年齢:#{@age}"
+    puts "性別:#{@gender}"
+  end
 end
 
 def q17
@@ -228,7 +225,6 @@ class Zoo
 
 end
 
-
 def q20
   # ここは変更しないで下さい（動物園・ユーザー情報は変更していただいてOKです）
   zoo = Zoo.new(name: "旭山動物園", entry_fee: { infant: 0, children: 400, adult: 800, senior: 500 })
@@ -237,7 +233,7 @@ def q20
     UserQ20.new(name: "たま", age: 3),
     UserQ20.new(name: "ゆたぼん", age: 10),
     UserQ20.new(name: "あじー", age: 32),
-    UserQ20.new(name: "ぎん", age: 108)
+    UserQ20.new(name: "ぎん", age: 108),
   ]
 
   users.each do |user|
